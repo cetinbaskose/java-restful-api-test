@@ -1,8 +1,10 @@
 package uk.co.huntersix.spring.rest.model;
 
-import org.junit.Test;
+import static junit.framework.TestCase.assertFalse;
+import static junit.framework.TestCase.assertNotNull;
+import static junit.framework.TestCase.assertNotSame;
 
-import static junit.framework.TestCase.*;
+import org.junit.Test;
 
 public class PersonTest {
     @Test

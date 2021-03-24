@@ -3,15 +3,11 @@ package uk.co.huntersix.spring.rest.model;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Person {
-    private final AtomicLong counter = new AtomicLong();
+    private final static AtomicLong counter = new AtomicLong();
 
     private Long id;
     private String firstName;
     private String lastName;
-
-    private Person() {
-        // empty
-    }
 
     public Person(String firstName, String lastName) {
         this.id = counter.incrementAndGet();
